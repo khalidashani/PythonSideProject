@@ -6,11 +6,11 @@
 
 import random
 
-number = random.randint(1, 100)
+number = random.randint(1, 1000)
 
 while True:
     try:
-        user = input("Guess the number between 1:100:")
+        user = input("Guess the number between 1:1000:")
         guess = int(user)
 
         if guess > number:
