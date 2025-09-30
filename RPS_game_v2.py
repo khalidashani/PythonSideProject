@@ -2,9 +2,11 @@
 
 import random
 
+# ensuring the key and value have neccessary emoji
 emojis = {'r':'🪨','s':'✂️', 'p':'📄'}
 choices = ('r', 'p', 's')
 
+# separate the main code into different function to help in debugging process should encounter any issue
 # checking user choice
 def get_user_choice():
     while True:
@@ -49,6 +51,8 @@ def play_game():
 
         determine_winner(user, computer)
 
+# after completion of the function, asking user if they want to proceed or quit the program
+        
         proceed = ask_proceed()
         if proceed == "invalid":
             print("Invalid choice, try again")
