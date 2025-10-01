@@ -1,9 +1,13 @@
 # create calculator that can do addition and substraction
 
 while True:
+    # Float systax to convert the user input into int
     number1 = float(input("Input first number: "))
     number2 = float(input("Input second value: "))
 
+    # could add error handling function should user enter character instead of number
+
+    # could use 'a' for addition and 's' for substraction to ease user input
     operation = input("Choose operation (+/-): ")
 
     if operation == '-':
